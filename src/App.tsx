@@ -20,7 +20,6 @@ import {
   Plus,
   Trash2,
   Save,
-  Settings,
   RefreshCw,
   Eye,
   RotateCcw,
@@ -32,19 +31,12 @@ import {
   Maximize2,
   ExternalLink,
   Youtube,
-  Video,
-  List,
   Image as ImageIcon,
-  Link as LinkIcon,
-  MessageSquare,
   Send,
   Bot,
   Sparkles,
-  User,
-  Cpu,
   Camera,
-  LogIn,
-  LucideIcon
+  type LucideIcon
 } from 'lucide-react';
 
 // --- Type Definitions ---
@@ -1491,7 +1483,7 @@ const AdminEditor: React.FC<AdminEditorProps> = ({ manual, onSave, onCancel }) =
                     <div>
                         <h2 className="font-bold text-slate-900">{manual ? "Edit Manual" : "New Procedure"}</h2>
                         <div className="flex space-x-2 mt-1">
-                            {['Basics', 'Prep Work', 'Procedures', 'Final'].map((label, i) => (
+                            {['Basics', 'Prep Work', 'Procedures', 'Final'].map((_, i) => (
                                 <div key={i} className={`h-1.5 w-8 rounded-full transition-colors ${i === editorStep ? 'bg-[#FFC947]' : i < editorStep ? 'bg-slate-400' : 'bg-slate-200'}`} />
                             ))}
                         </div>
