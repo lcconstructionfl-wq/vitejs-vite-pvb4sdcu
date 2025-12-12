@@ -1,0 +1,25 @@
+{
+  "short_name": "LC Custom",
+  "name": "LC Custom Playbook",
+  "icons": [
+    {
+      "src": "https://lucide.dev/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://via.placeholder.com/192/0C1A2A/FFC947?text=LC",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://via.placeholder.com/512/0C1A2A/FFC947?text=LC",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0C1A2A",
+  "background_color": "#ffffff"
+}
